@@ -1,0 +1,95 @@
+body {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0 auto;
+}
+
+a:hover {
+  transition: ease .15s;
+}
+
+.product-actions, .product-row {
+  display: flex;
+  align-items: center;
+}
+
+.product-row {
+  width: 1170;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.single-product {
+  max-width: 100%;
+  position: relative;
+}
+
+.product-actions {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-cta {
+  background-color: blue;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+}
+
+.product-cta:hover {
+  background-color: rgba(255, 0, 106, 0.7);
+}
+
+.single-product:last-of-type {
+  margin-right: 15px;
+}
+
+.discount-macaron {
+  background-color: blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  z-index: 1
+}
+
+.product-img {
+  position: relative;
+}
+
+.product-img .overlay {
+  display: none;
+  background-color: rgba(255, 0, 106, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: ease .8;
+}
+.product-actions .old-price{
+  text-decoration: line-through;
+}
+
+.product-img:hover .overlay {
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+}
